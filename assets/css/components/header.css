@@ -1,16 +1,58 @@
 header {
-  background-color: #23272F;
-  color: #ffffff;
-  padding: 20px 10%;
+  background: #333; /* Fundo escuro */
+  color: white; /* Texto claro */
+  padding: 40px 20px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header p {
-  margin: 10px 0 0;
+.profile-photo {
+  width: 120px; /* Tamanho da foto */
+  height: 120px;
+  border-radius: 50%; /* Deixa a foto redonda */
+  object-fit: cover; /* A imagem não ficará deformada */
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro p {
   font-size: 1.2rem;
+  color: #ccc;
+}
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link i {
+  margin-right: 8px;
+}
+
+.contact-link:hover {
+  color: #4CAF50; /* Cor de destaque */
 }

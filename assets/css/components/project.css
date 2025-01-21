@@ -1,26 +1,40 @@
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #23272F;
+}
+
 .project-item {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  width: 300px;
+  padding: 8px; /* Reduzido de 10px para 8px */
+  width: calc(45% - 30px);
   text-align: center;
-  margin: 20px; /* Adiciona espaçamento entre as caixas */
+  margin: 10px;
+  max-height: 300px; /* Adicionado um limite de altura */
+  overflow: hidden; /* Para esconder conteúdo extra, caso necessário */
 }
+
+
 
 .project-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Mostra que a imagem é clicável */
 }
 
 .project-item h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #1A1C23;
+  color: #23272F;
 }
 
 .project-item p {
@@ -33,4 +47,12 @@
   text-decoration: none;
   color: #1A1C23;
   font-weight: bold;
+  display: block; /* Garante que o link ocupe toda a área do conteúdo se necessário */
 }
+
+@media (max-width: 768px) {
+  .project-item {
+    width: calc(100% - 20px);
+  }
+}
+

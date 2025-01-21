@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Portfólio</h1>
-        <p>Desenvolvedor Back-end quase FullStack em Construção</p>
+        <div class="header-content">
+            <!-- Foto do desenvolvedor -->
+            <img src="assets/img/header/photo.jpg" alt="Foto de Jefferson Franco" class="profile-photo">
+            
+            <!-- Informações pessoais -->
+            <div class="intro">
+                <h1>JEFFERSON FRANCO</h1>
+                <p>Desenvolvedor Back-end quase FullStack em Construção</p>
+            </div>
+    
+            <!-- Links de contato -->
+            <div class="contact-links">
+                <a href="mailto:seuemail@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/jerffesonfrancoo/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Niffrej" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="about">
+    <main>
+        <section class="container about">
             <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas. Estou sempre aprendendo novas tecnologias para melhorar minhas habilidades.</p>
+            <p>Sou um desenvolvedor Java Back-end e Front-end, apaixonado por criar sistemas robustos, escaláveis e interfaces intuitivas. Tenho experiência significativa no desenvolvimento de aplicações empresariais e na criação de arquiteturas de software eficientes. Além disso, sou entusiasta do desenvolvimento de interfaces de usuário dinâmicas e responsivas, utilizando tecnologias como HTML, CSS, JavaScript e frameworks modernos como React.</p>
+            <p>Com um background acadêmico sólido no Centro Universitário Presidente Antônio Carlos - UNIPAC e experiência prática na NTT DATA Europe & LATAM, estou sempre buscando aprimorar minhas habilidades e alcançar a excelência na programação.</p>
+            <h3>Experiência Profissional:</h3>
+            <p><strong>Desenvolvedor Java | Software Engineer</strong> – NTT DATA Europe & LATAM</p>
+            <div id="skills-container" class="skills"></div>
         </section>
 
-        <section class="skills">
-            <div class="skill">
-                <h3>HTML</h3>
-                <p>Criação de estruturas semânticas para páginas web.</p>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <p>Estilização e design responsivo.</p>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <p>Adição de interatividade às páginas.</p>
-            </div>
+        <section class="container projects">
+            <h2>Projetos no GitHub</h2>
+            <div id="projects-container"></div>
         </section>
-    </div>
+    </main>
 
-    <section class="projects">
-    <div class="projects-container">
-      <h2>Meus Projetos no GitHub</h2>
-      <div id="github-projects" class="project-list"></div>
-    </div>
-  </section>
-  
-  <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 
     <footer>
         <p>&copy; 2025 Meu Portfólio. Feito com <span>&#10084;</span> por <a href="#">Jefferson Franco</a>.</p>
     </footer>
 </body>
+
 </html>

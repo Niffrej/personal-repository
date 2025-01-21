@@ -1,14 +1,7 @@
-import fetchGitHubProjects from './components/fetchProjects.js';
-import renderProjects from './components/renderProjects.js';
+import initializeProjects from './components/projects/project.js';
+import initializeSkills from './components/skills/skills.js';
 
-document.addEventListener('DOMContentLoaded', async () => {
-  const githubUsername = 'Niffrej'; 
-  const projectsContainer = document.getElementById('github-projects');
-
-  try {
-    const repos = await fetchGitHubProjects(githubUsername);
-    renderProjects(repos, projectsContainer);
-  } catch {
-    projectsContainer.innerHTML = '<p>Erro ao carregar projetos do GitHub. Tente novamente mais tarde.</p>';
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  initializeProjects();
+  initializeSkills();
 });
