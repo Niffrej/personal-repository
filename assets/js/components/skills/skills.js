@@ -7,7 +7,7 @@ const skills = [
   { image: "assets/img/skills/aws.png", description: "Serviços em nuvem escaláveis e sob demanda." },
   { image: "assets/img/skills/mysql.png", description: "Gerenciamento de bancos de dados relacionais eficientes." },
   { image: "assets/img/skills/mongodb.png", description: "Armazenamento flexível e escalável para dados não estruturados." },
-  { image: "assets/img/skills/docker.png", "description": "Containerização de aplicações para maior portabilidade e consistência entre ambientes." }
+  { image: "assets/img/skills/docker.png", description: "Containerização de aplicações para maior portabilidade e consistência entre ambientes." }
 ];
 
 export default function initializeSkills() {
