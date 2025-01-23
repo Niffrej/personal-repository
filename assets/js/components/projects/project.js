@@ -36,7 +36,7 @@ export const projects = [
     liveUrl: "https://github.com/Niffrej/simple-ecommerce",
   },
   {
-    name: "Simple E-commerce (Front-end)",
+    name: "Simple E-commerce",
     description: "Interface para e-commerce com foco em design e experiência do usuário.",
     image: "assets/img/projects/simple-ecommerce-front.jpg",
     codeUrl: "https://github.com/Niffrej/simple-ecommerce-front",
@@ -59,7 +59,6 @@ export function renderProjects(containerId) {
       <div class="project-item">
         <img src="${project.image}" alt="${project.name}" />
         <h3>${project.name}</h3>
-        <p>${project.description}</p>
         <div class="buttons">
           <a href="${project.codeUrl}" target="_blank" class="code-btn">Código</a>
           <a href="${project.liveUrl}" target="_blank" class="live-btn">Ver Página</a>

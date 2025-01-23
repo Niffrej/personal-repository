@@ -31,7 +31,7 @@
 .project-item .buttons {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .project-item .buttons a {
@@ -41,6 +41,8 @@
   font-size: 0.9rem;
   font-weight: bold;
   color: #fff;
+  flex: 1; /* Faz os botões terem o mesmo tamanho */
+  text-align: center;
 }
 
 .project-item .buttons .code-btn {
